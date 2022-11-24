@@ -1,0 +1,8 @@
+## Modelos de base de datos NoSQL ##
+
+Las bases de datos NoSQL utilizan una variedad de modelos de datoa para acceder y administrar datos. Estos tipos de base de datos estan optimizados especificamente para aplicaciones que requieren grandes volúmenes de datos, baja latencia y modelos de datos flexibles, lo que se logra mediante la flexibilización de algunas de las restricciones de coherencia de datos en otras bases de datos.
+
+Concidere el ejemplo de modelado del esquema para una base de datos simple de libros:
+
+* En una base de datos relacional, un registro de libros a menudo se enmascara (o "normaliza") y se almacena en tablas separadas, y las relaciones se definen mediante restricciones de claves primarias y externas. En este ejemplo, la tabla Libros tiene las columnas ISBN, Titulo de libro y numero de edicion, la tabla autores tiene las columnas IDAutor y Nombre de autor y, finalmente, la tabla Autor-ISBN tiene las columnas IDAutor e ISBN. El modelo relacional esta diseñado para permitir que la base de datos, normalizada para reducir la redundancia y, generalmente, esta optimizada para el almacenamiento.
+* En una base de datos NoSQL, el registro de un lobro generalmente se almacena como un documento JSON. PAra cada libro, el elemento ISBN, titulo del libro, Número de edición, Nombre autor y IDAutor se almacenan como atributos en un solo documento. En este modelo, los datos están optimizados para un desarrollo intuitivo y escalabilidad horizontal
